@@ -52,17 +52,17 @@ Zumo32U4Encoders encoders;
 These objects provide interfaces to various components of the Zumo32U4 robot.
 
 ## Helper Functions
-loadCustomCharacters() - Loads custom characters for the OLED display to show bar graphs.
-printBar(uint8_t height) - Prints a bar on the OLED display with the specified height.
-calibrateSensors() - Calibrates the line sensors by rotating the robot in place.
-showReadings() - Displays the current line sensor readings on the OLED display.
-updateOdometry() - Updates the robot's estimated position and orientation based on wheel encoder data.
-recordData() - Logs various data points including time, state, line position error, and odometry information.
+- loadCustomCharacters() - Loads custom characters for the OLED display to show bar graphs.
+- printBar(uint8_t height) - Prints a bar on the OLED display with the specified height.
+- calibrateSensors() - Calibrates the line sensors by rotating the robot in place.
+- showReadings() - Displays the current line sensor readings on the OLED display.
+- updateOdometry() - Updates the robot's estimated position and orientation based on wheel encoder data.
+- recordData() - Logs various data points including time, state, line position error, and odometry information.
 
 ## Main Control Functions
-lineFollow() - Implements the line-following algorithm using a PID-like control system.
-turnRight(), turnLeft(), forward(int path) - Helper functions for obstacle avoidance, implementing basic movement patterns.
-avoidObstacle() - Executes a predefined sequence of movements to avoid an obstacle.
+- lineFollow() - Implements the line-following algorithm using a PID-like control system.
+- turnRight(), turnLeft(), forward(int path) - Helper functions for obstacle avoidance, implementing basic movement patterns.
+- avoidObstacle() - Executes a predefined sequence of movements to avoid an obstacle.
 
 ## Setup Function
 ```cpp
